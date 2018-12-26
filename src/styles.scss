@@ -1,80 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
 
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-fieldset,
-input,
-textarea,
-p,
-blockquote,
-th,
-td {
-  margin: 0;
-  padding: 0;
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
 }
-
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
 body {
-  background: #fff;
+  margin: 2em;
+}
+body, input[text], button {
+  color: #888;
+  font-family: Cambria, Georgia;
+}
+a {
+  cursor: pointer;
+  cursor: hand;
+}
+button {
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+/* Navigation link styles */
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
 }
 
-fieldset,
-img {
-  border: 0 none;
-}
-
-address,
-caption,
-cite,
-code,
-dfn,
-em,
-strong,
-th,
-var {
-  font-style: normal;
-  font-weight: normal;
-}
-
-strong {
-  font-weight: 800;
-}
-
-ol,
-ul,
-li {
-  list-style: none outside none;
-}
-
-caption,
-th {
-  text-align: left;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-  font-weight: normal;
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
